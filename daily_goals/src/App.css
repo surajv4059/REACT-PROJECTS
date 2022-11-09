@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   font-family: "Roboto",sans-serif;
-  border: 1px solid red;
+  /* border: 2px solid red; */
 }
 nav{
   background-color: rgb(30, 108, 242);
@@ -36,7 +36,7 @@ input , textarea, button{
   padding: 15px;
   border: 1px solid rgba(0,0,0,0.2);
   border-radius: 5px;
-  margin: 10px;
+  margin: 10px 0px;
   font-size: 1.2rem;
 }
 
@@ -48,6 +48,34 @@ button{
 }
 
 .task{
-  border: 1px;
+  display: flex; 
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.task span{
+  color: rgb(49, 40, 40);
+}
+
+.task > div{
+  width: 100%;
+}
+
+.task button {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.6rem;
+  background-color: crimson;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .6s;
+}
+
+.task button:hover{
+  background-color: red;
 }
